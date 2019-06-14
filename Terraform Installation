@@ -1,0 +1,43 @@
+#Terraform Installation STEPS
+
+## On Ubuntu 18.04
+
+1. Install unzip
+  sudo apt-get install unzip
+
+2. Download latest version of the terraform ** You can replace with the lastest release from:  https://www.terraform.io/downloads.html
+ wget https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip
+
+3. Extract the downloaded file archive
+  unzip terraform_0.11.13_linux_amd64.zip
+
+4. Move the executable into a directory searched for executables
+  sudo mv terraform /usr/local/bin/
+
+5. Run it
+  terraform --version
+  
+  
+## ON Windows
+
+1. Download terraform for windows from: https://www.terraform.io/downloads.html
+  Note: Terraform is packaged as a zip archive, so after downloading Terraform, unzip the package. Terraform runs as a single binary named terraform. 
+  Any other files in the package can be safely removed and Terraform will still function
+2. Copy files from the zip to “c:\terraform” for example. That’s our terraform PATH.
+3. The final step is to make sure that the terraform binary is available on the PATH.
+  i. Type Variables in search or you can open from Control panel--> System--> Advance System Settings--> Advanced Tab
+  ii. Click Environment Variables. 
+  iii. n the section System Variables, find the PATH environment variable and select it. Click Edit. If the PATH environment variable does not exist, click New.
+  iv. In the Edit System Variable (or New System Variable) window, append at the end of the PATH environment variable the value of terraform path ex.”c:\terraform;” .
+  v. Click OK and close all remaining windows.
+4. Open the command prompt and run terraform. eg: terraform --version
+
+
+## ON Mac OS
+
+1. Open Terminal by pressing command+space then type terminal and hit Enter key.
+2. Install homebrew first. if not already installed
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
+3. Install terraform.
+  brew install terraform
+4. Now, use terraform! eg : terraform --version
