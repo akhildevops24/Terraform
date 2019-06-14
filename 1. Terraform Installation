@@ -25,11 +25,11 @@
   Any other files in the package can be safely removed and Terraform will still function
 2. Copy files from the zip to “c:\terraform” for example. That’s our terraform PATH.
 3. The final step is to make sure that the terraform binary is available on the PATH.
-  i. Type Variables in search or you can open from Control panel--> System--> Advance System Settings--> Advanced Tab
-  ii. Click Environment Variables. 
-  iii. n the section System Variables, find the PATH environment variable and select it. Click Edit. If the PATH environment variable does not exist, click New.
-  iv. In the Edit System Variable (or New System Variable) window, append at the end of the PATH environment variable the value of terraform path ex.”c:\terraform;” .
-  v. Click OK and close all remaining windows.
+  a) Type Variables in search or you can open from Control panel--> System--> Advance System Settings--> Advanced Tab
+  b) Click Environment Variables. 
+  c) n the section System Variables, find the PATH environment variable and select it. Click Edit. If the PATH environment variable does not exist, click New.
+  d) In the Edit System Variable (or New System Variable) window, append at the end of the PATH environment variable the value of terraform path ex.”c:\terraform;” .
+  e) Click OK and close all remaining windows.
 4. Open the command prompt and run terraform. eg: terraform --version
 
 
